@@ -45,6 +45,6 @@ yarn add ethers
 
 Parte 4.Pestaña Balance - Formulario para mover fondos 
  ------------------------------------------------------
-1. Instalar react-hook-from
+1. Instalar react-hook-from: yarn add react-hook-form
 2. Definir el formulario 
 3. Desarrollar la funcion que concrete la transaccion
