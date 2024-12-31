@@ -1,0 +1,50 @@
+ Parte 1.Inicializar el proyecto creando su estructura
+  ------------------------------------------------------
+  1. Creación de la aplicación con vite: yarn create vite proy1-wallet –template react
+    Instalar las dependencias: yarn 
+    Lavantar la app localmente: yarn dev 
+ 
+ 2. Quitar los Elementos que no necesitemos
+ 
+ 3. Poner el Bootstrap. 
+    Usar una CDN para Bootstrap para cargar la biblioteca desde servidores externos
+    sin necesidad de instalar localmente.
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+4. Instalar router y preparar el uso de Rutas en main.jsx: yarn add react-router-dom
+    import { BrowserRouter, Routes, Route } from 'react-router-dom'
+ 
+5. Hacer los componentes necesarios Home.jsx y Header.jsx
+   En Home agrgar el Outlet
+   <div><Outlet />{/* Contenido dinámico basado en la ruta */}</div>    
+   En header usar import { Link } from "react-router-dom";
+   cambiar class x className, y a x Link. Agregar las rutas correspondientes. 
+
+
+Parte 2. Pestaña Productos
+ ------------------------------------------------------
+1. Instalar reac-query: yarn add react-query
+2. Instalar axios: yarn add axios
+3. Crear queryCliente y poner QueryClientProvider en el app.js
+4. Hacer el componente productos y usar en el useQuery para 
+acceder. Tendremos que hacer una llamada a un servidor
+5. Hacer la presentación usando tabla de Bootstrap
+6. Ver como está hecho el servidor web
+
+
+Parte 3. Pestaña Balance - Conectar a metamask
+ ------------------------------------------------------
+3.1 Tener instalado Metamask con saldo a partir de un faucet
+3.2 Instalar la libreria ethers (podria isntalarse la libreria web3)
+yarn add ethers
+3.2 Hacer componente Balance.jsx
+
+ 5. Guadar la cuenta
+ 6. Cuando cambie la cuenta buscar el balance
+
+
+Parte 4.Pestaña Balance - Formulario para mover fondos 
+ ------------------------------------------------------
+1. Instalar react-hook-from
+2. Definir el formulario 
+3. Desarrollar la funcion que concrete la transaccion
